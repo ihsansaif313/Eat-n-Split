@@ -129,7 +129,7 @@ function FormAddFriend({ onAddFriend }) {
     const id = crypto.randomUUID();
     const newFriend = {
       name,
-      image: `${image}?u=${id}`,
+      image: image.startsWith("https://i.pravatar.cc/48") ? `${image}?u=${id}` : image,
       balance: 0,
       id,
     };
