@@ -54,13 +54,6 @@ npm run dev
 | **User Experience** | 🎨 Modern UI • 📱 Responsive design • 🌓 Light/Dark themes • 🚀 Instant updates          |
 | **Security**      | 🔒 Local storage • 🛡️ Data validation • 📉 Balance safeguards • ⚡ Error boundaries        |
 
-```bash
-# Quick Start
-git clone https://github.com/your-username/Eat-n-Split.git
-cd Eat-n-Split
-npm install
-npm run dev
-```
 ### State Management Flow
 ```mermaid
 graph TD
