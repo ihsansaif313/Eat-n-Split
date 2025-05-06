@@ -162,10 +162,16 @@ function FormAddFriend({ onAddFriend }) {
 function FormSplitBill({ selectedFriend, onSplitBill }) {
   const [bill, setBill] = useState(null); // Initialize with 0 instead of null
   const [userExpense, setUserExpense] = useState(null); // Initialize with 0 instead of null
+
+  const paidByFriend = bill > 0 && userExpense <= bill ? bill - userExpense : 0; // Ensure valid calculation
+
   const [whoIsPaying, setWHoIsPaying] = useState("you");
-  const paidByFriend = bill ? bill - userExpense : "";
   function handleSubmit(e) {
     e.preventDefault();
+    if (bill <= 0){ 
+      alert("Please fill in the bill amount before submitting.");
+      return;
+    } // Prevent submission if bill is invalid
     onSplitBill(whoIsPaying === "you" ? paidByFriend : -userExpense);
   }
   return (
@@ -184,9 +190,12 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
         type="text"
         value={userExpense}
         onChange={(e) =>
+          
           setUserExpense(
             Number(e.target.value) > bill ? userExpense : Number(e.target.value)
           )
+         
+        
         }
       ></input>
 
