@@ -8,8 +8,8 @@
 
 
 [![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-%20%E2%86%92-brightgreen)](https://ihsansaif313.github.io/Eat-n-Split/)   
-• [Report Bug](https://github.com/your-username/Eat-n-Split/issues) 
-• [Request Feature](https://github.com/your-username/Eat-n-Split/issues)
+• [Report Bug](https://github.com/ihsansaif313/Eat-n-Split/issues) 
+• [Request Feature](https://github.com/ihsansaif313/Eat-n-Split/issues)
 
 
 
@@ -38,7 +38,7 @@
 ## Installation 🛠️
 
 ```bash
-git clone https://github.com/your-username/Eat-n-Split.git
+git clone https://github.com/ihsansaif313/Eat-n-Split.git
 cd Eat-n-Split
 npm install
 npm run dev
@@ -54,13 +54,6 @@ npm run dev
 | **User Experience** | 🎨 Modern UI • 📱 Responsive design • 🌓 Light/Dark themes • 🚀 Instant updates          |
 | **Security**      | 🔒 Local storage • 🛡️ Data validation • 📉 Balance safeguards • ⚡ Error boundaries        |
 
-```bash
-# Quick Start
-git clone https://github.com/your-username/Eat-n-Split.git
-cd Eat-n-Split
-npm install
-npm run dev
-```
 ### State Management Flow
 ```mermaid
 graph TD
